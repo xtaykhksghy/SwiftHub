@@ -6,7 +6,12 @@ inhibit_all_warnings!
 
 target 'SwiftHub' do
     # Pods for SwiftHub
-
+    
+    # UI调试工具
+    pod 'Reveal-SDK', '24', :configurations => ['Debug']
+    
+    
+    
     # Networking
     pod 'Moya/RxSwift', '~> 15.0'  # https://github.com/Moya/Moya
     pod 'Apollo', '0.50.0'  # https://github.com/apollographql/apollo-ios
